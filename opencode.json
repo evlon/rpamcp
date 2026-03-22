@@ -1,0 +1,10 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+        "rpamcp": {
+            "type": "local",
+            "command": ["pnpm", "start"],
+            "enabled": true
+        }
+    }
+}

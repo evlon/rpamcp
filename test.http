@@ -1,0 +1,80 @@
+# RPA MCP Server - HTTP API 测试文件
+# 使用 VSCode REST Client 插件发送请求
+
+@base_url = http://localhost:3001
+
+### 1. 健康检查
+GET {{base_url}}/api/health
+
+### 2. 列出所有技能
+GET {{base_url}}/api/skills
+
+### 3. 列出指定应用的技能
+GET {{base_url}}/api/skills?appName=元宝应用
+
+### 4. 注册技能
+POST {{base_url}}/api/skill/register
+Content-Type: application/json
+
+{
+  "appName": "元宝应用",
+  "skillName": "test_skill",
+  "description": "测试技能"
+}
+
+### 5. 注销技能
+DELETE {{base_url}}/api/skill/register?appName=元宝应用&skillName=test_skill
+
+### 6. 创建任务 - 问问/查询
+POST {{base_url}}/api/task/create
+Content-Type: application/json
+
+{
+  "appName": "元宝应用",
+  "skillName": "问问/查询",
+  "params": {
+    "prompt": "你好"
+  }
+}
+
+### 7. 创建任务 - 文生图
+POST {{base_url}}/api/task/create
+Content-Type: application/json
+
+{
+  "appName": "元宝应用",
+  "skillName": "文生图",
+  "params": {
+    "prompt": "一只可爱的猫咪"
+  }
+}
+
+### 8. 轮询任务（RPA 调用）
+GET {{base_url}}/api/task/next?appName=元宝应用
+
+### 9. 轮询任务 - 指定技能
+GET {{base_url}}/api/task/next?appName=元宝应用&skillName=问问/查询
+
+### 10. 查询任务（将 <task_id> 替换为实际 ID）
+GET {{base_url}}/api/task/d7f1aa8b-3aba-47b0-8b08-b54934b8030a
+
+### 11. 完成任务 - 提交结果（将 <task_id> 替换为实际 ID）
+POST {{base_url}}/api/task/<task_id>/complete
+Content-Type: application/json
+
+{
+  "result": {
+    "answer": "你好！有什么可以帮助你的吗？"
+  }
+}
+
+### 12. 完成任务 - 提交错误（将 <task_id> 替换为实际 ID）
+POST {{base_url}}/api/task/<task_id>/complete
+Content-Type: application/json
+
+{
+  "error": "执行失败：网络错误"
+}
+
+### 13. 列出任务（最近 10 条）
+GET {{base_url}}/api/tasks?appName=元宝应用&limit=10
