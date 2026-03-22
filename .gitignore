@@ -2,8 +2,9 @@
 node_modules
 
 # Build output
-dist
-
+dist/
+data/
+logs/
 # Environment
 .env
 .env.local

@@ -1,0 +1,1158 @@
+{
+  "skills": {
+    "元宝应用:文生图": {
+      "name": "文生图",
+      "description": "通过提示词，生成符合要求的图片",
+      "appName": "元宝应用",
+      "paramsSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "元宝交互提示词"
+          }
+        },
+        "required": [
+          "prompt: "
+        ]
+      },
+      "createdAt": 1774151730576
+    },
+    "元宝应用:查询": {
+      "name": "查询",
+      "description": "通过提示词，生成符合要求的图片",
+      "appName": "元宝应用",
+      "paramsSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "元宝交互提示词"
+          }
+        },
+        "required": [
+          "prompt: "
+        ]
+      },
+      "createdAt": 1774151730585
+    },
+    "元宝应用:元宝文生图": {
+      "name": "元宝文生图",
+      "description": "通过提示词，生成符合要求的图片",
+      "appName": "元宝应用",
+      "paramsSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "元宝交互提示词"
+          }
+        },
+        "required": [
+          "prompt: "
+        ]
+      },
+      "createdAt": 1774155712043
+    },
+    "元宝应用:元宝问问": {
+      "name": "元宝问问",
+      "description": "通过提示词，生成符合要求的图片",
+      "appName": "元宝应用",
+      "paramsSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "description": "元宝交互提示词"
+          }
+        },
+        "required": [
+          "prompt: "
+        ]
+      },
+      "createdAt": 1774155712070
+    }
+  },
+  "tasks": {
+    "886199b9-b7a9-4e89-8224-ffe03730c6ab": {
+      "id": "886199b9-b7a9-4e89-8224-ffe03730c6ab",
+      "skillName": "元宝问问",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中国移动的全称"
+      },
+      "status": "completed",
+      "createdAt": 1774152001922,
+      "updatedAt": 1774152017515,
+      "result": {
+        "data": "中国移动通信集团有限公司",
+        "success": true
+      }
+    },
+    "47782dbf-5e94-49f3-8fc2-5bad09859450": {
+      "id": "47782dbf-5e94-49f3-8fc2-5bad09859450",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位美丽优雅的年轻女孩，东亚面孔，黑色长发自然垂落，温柔微笑，穿着简约时尚的白色连衣裙，站在阳光明媚的花园中，背景是盛开的樱花树，柔和的自然光线，清新梦幻的氛围，高分辨率，精美细节，专业人像摄影风格"
+      },
+      "status": "completed",
+      "createdAt": 1774152099847,
+      "updatedAt": 1774152122213,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322120156h0_158059bef835a1b743e03853db423731?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152116;1805688116&q-key-time=1774152116;1805688116&q-header-list=host&q-url-param-list=&q-signature=aa8a423b3fa9445927ccc6fda5184feec8855eb7",
+        "success": true
+      }
+    },
+    "2c6bd183-294b-424f-bbab-29eb31f03388": {
+      "id": "2c6bd183-294b-424f-bbab-29eb31f03388",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格"
+      },
+      "status": "completed",
+      "createdAt": 1774152671830,
+      "updatedAt": 1774152691717,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121125h0_8cc0d625ae7918f5a8ab3a51ae0dc306?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152685;1805688685&q-key-time=1774152685;1805688685&q-header-list=host&q-url-param-list=&q-signature=0b742725bf1d791284c5e6fdbc85455ae9df23d0",
+        "success": true
+      }
+    },
+    "3f47d1bd-3a1e-4359-bb97-4a6c9a2ad063": {
+      "id": "3f47d1bd-3a1e-4359-bb97-4a6c9a2ad063",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格"
+      },
+      "status": "completed",
+      "createdAt": 1774152680965,
+      "updatedAt": 1774152711001,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121145h0_581f2bb0939a2223b5c29b590e5f3209?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152705;1805688705&q-key-time=1774152705;1805688705&q-header-list=host&q-url-param-list=&q-signature=6762e8896e883c92c2350caafa626ca02a2937ab",
+        "success": true
+      }
+    },
+    "1ebdfcab-f44c-4e5d-9f75-6baf4dc921cc": {
+      "id": "1ebdfcab-f44c-4e5d-9f75-6baf4dc921cc",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774152787739,
+      "updatedAt": 1774152807436,
+      "result": {
+        "data": "",
+        "success": true
+      }
+    },
+    "9d70ac85-afa1-4144-8fbf-2a27a6ca0d80": {
+      "id": "9d70ac85-afa1-4144-8fbf-2a27a6ca0d80",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774152853805,
+      "updatedAt": 1774152873185,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121427h0_f95c8ff539ba30a8ed6d903667544973?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152867;1805688867&q-key-time=1774152867;1805688867&q-header-list=host&q-url-param-list=&q-signature=b3d298428bb70743779f4baedc9d9a2f0f881b0d",
+        "success": true
+      }
+    },
+    "f3886fd8-5303-4766-9aaa-baaf57f27356": {
+      "id": "f3886fd8-5303-4766-9aaa-baaf57f27356",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "赛博朋克风格的城市夜景"
+      },
+      "status": "completed",
+      "createdAt": 1774152873941,
+      "updatedAt": 1774152893679,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121447h0_ec8ca98730449c7e6d38da7901893ce8?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152887;1805688887&q-key-time=1774152887;1805688887&q-header-list=host&q-url-param-list=&q-signature=f3d05804c4111b904efb257900bccf726893e527",
+        "success": true
+      }
+    },
+    "10a82df6-7498-4015-aa87-000033b9c22c": {
+      "id": "10a82df6-7498-4015-aa87-000033b9c22c",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774152945215,
+      "updatedAt": 1774152964424,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121558h0_1669eda88cdba01c067e42532d711d6a?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152958;1805688958&q-key-time=1774152958;1805688958&q-header-list=host&q-url-param-list=&q-signature=60f3c1d54fd7f092b04eec4335606a62c9f8885b",
+        "success": true
+      }
+    },
+    "e585c5ff-de64-418d-a9a5-43497d251afa": {
+      "id": "e585c5ff-de64-418d-a9a5-43497d251afa",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "赛博朋克风格的城市夜景"
+      },
+      "status": "completed",
+      "createdAt": 1774152965695,
+      "updatedAt": 1774152983406,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121618h0_2b4cb31015f130aee579ea3f2410e07f?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152978;1805688978&q-key-time=1774152978;1805688978&q-header-list=host&q-url-param-list=&q-signature=b157610ccbd69b14e6390d44118854a051b6d138",
+        "success": true
+      }
+    },
+    "4b2c9e37-b94e-4279-aa38-b9ccecd9b11b": {
+      "id": "4b2c9e37-b94e-4279-aa38-b9ccecd9b11b",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中国风山水画，云雾缭绕"
+      },
+      "status": "completed",
+      "createdAt": 1774152965783,
+      "updatedAt": 1774153002398,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322121637h0_441472ab324c9e411c88a3088ada6a35?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774152997;1805688997&q-key-time=1774152997;1805688997&q-header-list=host&q-url-param-list=&q-signature=da83d2d6fc2f5bf38238c825055e3b06650fba1e",
+        "success": true
+      }
+    },
+    "fed0ff8d-15f3-4daa-bb35-558e9864de1e": {
+      "id": "fed0ff8d-15f3-4daa-bb35-558e9864de1e",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774153466856,
+      "updatedAt": 1774153484728,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322122439h0_bf229cfcf9b87ec48d33ff24467e52bb?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774153479;1805689479&q-key-time=1774153479;1805689479&q-header-list=host&q-url-param-list=&q-signature=321f3401b54c2b895c538ead80229c9bc8dd1c6e",
+        "success": true
+      }
+    },
+    "3e5de347-46cc-4550-8727-53270e7a0ff2": {
+      "id": "3e5de347-46cc-4550-8727-53270e7a0ff2",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "赛博朋克风格的城市夜景"
+      },
+      "status": "completed",
+      "createdAt": 1774153485319,
+      "updatedAt": 1774153503912,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322122458h0_0b2012e5e1afa56cbc6e1afd8708a60a?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774153498;1805689498&q-key-time=1774153498;1805689498&q-header-list=host&q-url-param-list=&q-signature=fdfc5379220ac0b94a5155a62a2b863ca4cef543",
+        "success": true
+      }
+    },
+    "34494301-273f-44ee-ac3f-e4b3049782d3": {
+      "id": "34494301-273f-44ee-ac3f-e4b3049782d3",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中国风山水画，云雾缭绕"
+      },
+      "status": "completed",
+      "createdAt": 1774153485396,
+      "updatedAt": 1774153523639,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322122517h0_e7356977189b53f919051d29012bd47a?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774153517;1805689517&q-key-time=1774153517;1805689517&q-header-list=host&q-url-param-list=&q-signature=4e3135ec1271139db42ccf44e8a26d86ce5fb6cc",
+        "success": true
+      }
+    },
+    "d8fb29eb-5775-4399-ace2-127992f4e693": {
+      "id": "d8fb29eb-5775-4399-ace2-127992f4e693",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一个可爱的小女孩，卡通风格，温暖治愈，粉色色调，高清质感"
+      },
+      "status": "completed",
+      "createdAt": 1774153613494,
+      "updatedAt": 1774153631486,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322122705h0_600f37bb80335e5a58180c2075a5f19c?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774153625;1805689625&q-key-time=1774153625;1805689625&q-header-list=host&q-url-param-list=&q-signature=bcd5609ef4a4b49c11c51b7a31be9fde2818eece",
+        "success": true
+      }
+    },
+    "ad9671d1-befb-450e-837c-5771c9512f3d": {
+      "id": "ad9671d1-befb-450e-837c-5771c9512f3d",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一个可爱的小女孩，卡通风格，温暖治愈，粉色色调"
+      },
+      "status": "completed",
+      "createdAt": 1774153639910,
+      "updatedAt": 1774153659268,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322122733h0_c91248c7dc71e41a4dfb31952a6db699?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774153653;1805689653&q-key-time=1774153653;1805689653&q-header-list=host&q-url-param-list=&q-signature=5ac81480029282a13aedefc7028fc30d1dfb70fb",
+        "success": true
+      }
+    },
+    "56f3f82f-78a2-4722-8aba-95f73d663480": {
+      "id": "56f3f82f-78a2-4722-8aba-95f73d663480",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一个可爱的小女孩，卡通风格，温暖治愈，粉色色调，高清质感"
+      },
+      "status": "completed",
+      "createdAt": 1774153667220,
+      "updatedAt": 1774153684629,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322122759h0_14822ace35b1bff0d7d558c1363b77c1?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774153679;1805689679&q-key-time=1774153679;1805689679&q-header-list=host&q-url-param-list=&q-signature=f5a8a7c00cbed9e499ce658e941bad597682a1c4",
+        "success": true
+      }
+    },
+    "1068447b-40f0-4a8f-a9c1-41849e95a01b": {
+      "id": "1068447b-40f0-4a8f-a9c1-41849e95a01b",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一个可爱的小女孩，卡通风格，温暖治愈，粉色色调，高清质感"
+      },
+      "status": "completed",
+      "createdAt": 1774154768115,
+      "updatedAt": 1774154786068,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322124620h0_47c2b5554d3db9a15a4c6fcc6c548260?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774154780;1805690780&q-key-time=1774154780;1805690780&q-header-list=host&q-url-param-list=&q-signature=4dffc3b037bb7bc1cd325382af112e30cb8f6bfc",
+        "success": true
+      }
+    },
+    "3c285682-6dae-4da2-b796-8c0f0960088d": {
+      "id": "3c285682-6dae-4da2-b796-8c0f0960088d",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "腹部肥胖与大脑健康对比概念图，警示风格，红色蓝色对比，医学健康主题，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774156911379,
+      "updatedAt": 1774156948314,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132222h0_a54d17e76b972403d278abfb2fbd045f?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774156942;1805692942&q-key-time=1774156942;1805692942&q-header-list=host&q-url-param-list=&q-signature=d099064cd63eba3617656988cb445bea036a4011",
+        "success": true
+      }
+    },
+    "b40e74c1-a06f-4252-8530-67b537c57dc4": {
+      "id": "b40e74c1-a06f-4252-8530-67b537c57dc4",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中年人在家测量腰围，健康检查场景，温馨生活场景，水彩风格，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774156963075,
+      "updatedAt": 1774156981131,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132255h0_e3fbcf0e871a52e0ae10ef69a12f8c10?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774156975;1805692975&q-key-time=1774156975;1805692975&q-header-list=host&q-url-param-list=&q-signature=a77831b8ce82df155b3845d2af30385fd46e7e7e",
+        "success": true
+      }
+    },
+    "33baafce-9fc6-411f-acbf-d53492b0f68f": {
+      "id": "33baafce-9fc6-411f-acbf-d53492b0f68f",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "冬季蔬菜丰收场景，白菜萝卜菠菜西兰花，菜市场摊位，温暖色调，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774156963080,
+      "updatedAt": 1774157016757,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132330h0_3e8eda682a6528ac15548fdbc7b644af?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157010;1805693010&q-key-time=1774157010;1805693010&q-header-list=host&q-url-param-list=&q-signature=d62c5c148e6ef5ace4d92302c659354f7a85ed45",
+        "success": true
+      }
+    },
+    "eaab1950-05ae-43c9-9266-f2c6b05dd1df": {
+      "id": "eaab1950-05ae-43c9-9266-f2c6b05dd1df",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "新鲜蔬菜拼盘，胡萝卜莲藕西兰花，色彩丰富，健康饮食，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774156963086,
+      "updatedAt": 1774157035487,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132350h0_dc986a288aa6c9626949501e8f898f7d?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157030;1805693030&q-key-time=1774157030;1805693030&q-header-list=host&q-url-param-list=&q-signature=269b205bcd0c53f4e38728794e4c84e8dca0a689",
+        "success": true
+      }
+    },
+    "544d7419-d515-4222-84c1-d6f795cbe914": {
+      "id": "544d7419-d515-4222-84c1-d6f795cbe914",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "春天户外运动健身，跑步瑜伽，绿色草地，阳光明媚，健康减肥主题，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774156963092,
+      "updatedAt": 1774157071589,
+      "result": {
+        "data": "",
+        "success": true
+      }
+    },
+    "457be1f1-f4f4-4709-9df6-88453034aa59": {
+      "id": "457be1f1-f4f4-4709-9df6-88453034aa59",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "女性在家做深蹲运动，客厅环境，温馨明亮，健身主题，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774156963098,
+      "updatedAt": 1774157090334,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132444h0_255274f9a256d0eec0f6f154d8c426f3?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157085;1805693085&q-key-time=1774157085;1805693085&q-header-list=host&q-url-param-list=&q-signature=fb78d081a4b91e23f60bf89fd2a2b10e33065328",
+        "success": true
+      }
+    },
+    "f4eff6e7-e22b-414c-8a01-2a30c5936dc3": {
+      "id": "f4eff6e7-e22b-414c-8a01-2a30c5936dc3",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "父母和孩子温馨对话场景，客厅沙发，温暖灯光，亲子沟通主题，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774156963102,
+      "updatedAt": 1774157127424,
+      "result": {
+        "data": "",
+        "success": true
+      }
+    },
+    "29079d51-cedb-4969-acc2-92e1d4545fce": {
+      "id": "29079d51-cedb-4969-acc2-92e1d4545fce",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "妈妈和孩子一起读书，温馨家庭场景，柔和光线，亲子时光，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774156963107,
+      "updatedAt": 1774157146199,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132540h0_1b69669ec42ddd324c34b59a59b11907?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157141;1805693141&q-key-time=1774157141;1805693141&q-header-list=host&q-url-param-list=&q-signature=638980b0febc94e7b8a0f985c1db1d05aed6b392",
+        "success": true
+      }
+    },
+    "36d91044-d379-432e-8b1c-5dd137b18a45": {
+      "id": "36d91044-d379-432e-8b1c-5dd137b18a45",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "父母蹲下来和孩子平视交流，倾听场景，温暖治愈，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774156963113,
+      "updatedAt": 1774157165457,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132559h0_a62302d43010aca93ea287d8ece672ad?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157159;1805693159&q-key-time=1774157159;1805693159&q-header-list=host&q-url-param-list=&q-signature=13400ae4829e6acb29f80e85658296dd08aeac7f",
+        "success": true
+      }
+    },
+    "7fea99e3-4a59-4fc2-ba97-a9c339d76c23": {
+      "id": "7fea99e3-4a59-4fc2-ba97-a9c339d76c23",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "春天户外运动健身，跑步瑜伽，绿色草地，阳光明媚，健康减肥主题，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774157222979,
+      "updatedAt": 1774157257851,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132731h0_ad19c619550dc6be2eb7718e51cebbda?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157252;1805693252&q-key-time=1774157252;1805693252&q-header-list=host&q-url-param-list=&q-signature=85bc30a4d14c20aecf6f2b102c08ec2b0988a65b",
+        "success": true
+      }
+    },
+    "0dc4b709-6d9c-4753-a951-668ed10478e4": {
+      "id": "0dc4b709-6d9c-4753-a951-668ed10478e4",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "父母和孩子温馨对话场景，客厅沙发，温暖灯光，亲子沟通主题，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774157222984,
+      "updatedAt": 1774157294422,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322132808h0_17939bfb1c7b289afd257beebdebb066?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774157288;1805693288&q-key-time=1774157288;1805693288&q-header-list=host&q-url-param-list=&q-signature=78f27289ea769b7a88e243840edf2d2e61291733",
+        "success": true
+      }
+    },
+    "46541728-2be7-41df-98b0-f7eb42151f92": {
+      "id": "46541728-2be7-41df-98b0-f7eb42151f92",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774165501810,
+      "updatedAt": 1774165519277,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154513h0_90f181693797d3605593f17f3636d728?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165513;1805701513&q-key-time=1774165513;1805701513&q-header-list=host&q-url-param-list=&q-signature=49389c0517a87e66cbfa052a033c54a6789f78bb",
+        "success": true
+      }
+    },
+    "6cfc6310-78d6-49fb-b04d-2b84b0a6a924": {
+      "id": "6cfc6310-78d6-49fb-b04d-2b84b0a6a924",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "赛博朋克风格的城市夜景"
+      },
+      "status": "completed",
+      "createdAt": 1774165520267,
+      "updatedAt": 1774165538702,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154532h0_2072bc5da15ab3b0edca2542fcbb08d7?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165533;1805701533&q-key-time=1774165533;1805701533&q-header-list=host&q-url-param-list=&q-signature=0ce38956f8c6bd1eec587fc0c3f32c268facd519",
+        "success": true
+      }
+    },
+    "40d251c7-32d5-4428-a55a-f4a12a230848": {
+      "id": "40d251c7-32d5-4428-a55a-f4a12a230848",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中国风山水画，云雾缭绕"
+      },
+      "status": "completed",
+      "createdAt": 1774165520342,
+      "updatedAt": 1774165557608,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154551h0_ed1c44bcda1de88844110bac4ec66704?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165551;1805701551&q-key-time=1774165551;1805701551&q-header-list=host&q-url-param-list=&q-signature=534767117c472ce904db74a300ac6db08f70d522",
+        "success": true
+      }
+    },
+    "651a4903-750f-476f-adf5-0abb08f63f30": {
+      "id": "651a4903-750f-476f-adf5-0abb08f63f30",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "公众号封面图，温暖治愈风格，16:9"
+      },
+      "status": "completed",
+      "createdAt": 1774165538078,
+      "updatedAt": 1774165592163,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154626h0_74914270b7830cf3a63815fb30da6edf?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165586;1805701586&q-key-time=1774165586;1805701586&q-header-list=host&q-url-param-list=&q-signature=0d1d403054e1a8a9270b934cda756d3ea4739ae3",
+        "success": true
+      }
+    },
+    "3f1dd17c-b388-45cb-92b1-a98e0e8f9ff4": {
+      "id": "3f1dd17c-b388-45cb-92b1-a98e0e8f9ff4",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "公众号封面图，温暖治愈风格，16:9"
+      },
+      "status": "completed",
+      "createdAt": 1774165602292,
+      "updatedAt": 1774165637486,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154711h0_c6a6a2e4d4ceaa6aacf705c74688c20e?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165631;1805701631&q-key-time=1774165631;1805701631&q-header-list=host&q-url-param-list=&q-signature=bb195664848356931da06ce792960acd393bb0c7",
+        "success": true
+      }
+    },
+    "1a77854c-ed62-48a7-a307-c38704748039": {
+      "id": "1a77854c-ed62-48a7-a307-c38704748039",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774165768215,
+      "updatedAt": 1774165785769,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154940h0_50c307bbd724b198776aa89e1cf4a38e?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165780;1805701780&q-key-time=1774165780;1805701780&q-header-list=host&q-url-param-list=&q-signature=bcbbf82c1dac7aa84d0bcec3ec862320bca531a0",
+        "success": true
+      }
+    },
+    "2661b75b-7623-497f-9ee4-de234ecd0779": {
+      "id": "2661b75b-7623-497f-9ee4-de234ecd0779",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "赛博朋克风格的城市夜景"
+      },
+      "status": "completed",
+      "createdAt": 1774165786686,
+      "updatedAt": 1774165805202,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322154959h0_a54913715ae5624f644732ee01025391?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165799;1805701799&q-key-time=1774165799;1805701799&q-header-list=host&q-url-param-list=&q-signature=25573623623380d53c2c8e876bb504a6e66d32c4",
+        "success": true
+      }
+    },
+    "d1e411bd-4b25-4c82-a81c-962a0a656b77": {
+      "id": "d1e411bd-4b25-4c82-a81c-962a0a656b77",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中国风山水画，云雾缭绕"
+      },
+      "status": "completed",
+      "createdAt": 1774165786753,
+      "updatedAt": 1774165824048,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322155018h0_c293e19c231b59320886b84ffa327443?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774165818;1805701818&q-key-time=1774165818;1805701818&q-header-list=host&q-url-param-list=&q-signature=83d95f753b7c6ab147d1e70af4a7e4ae80e0b6a3",
+        "success": true
+      }
+    },
+    "4b80a129-890b-493f-a960-e4b45237afe3": {
+      "id": "4b80a129-890b-493f-a960-e4b45237afe3",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的中老年女性，坐在公园长椅上，阳光透过树叶洒在身上，\n温暖治愈的氛围，脸上带着淡淡的微笑，眼神中有怀念也有希望，\n水彩风格，柔和色调，温馨感人，适合公众号封面"
+      },
+      "status": "completed",
+      "createdAt": 1774173238003,
+      "updatedAt": 1774173257360,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322175411h0_2a16c8d9d72afeb8c739fcf173cd3ec4?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173251;1805709251&q-key-time=1774173251;1805709251&q-header-list=host&q-url-param-list=&q-signature=0e7ce03b051ca4abcb834e4e35589131a7115bd1",
+        "success": true
+      }
+    },
+    "4f5f7311-db3c-4cf2-b683-b20859223680": {
+      "id": "4f5f7311-db3c-4cf2-b683-b20859223680",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的中老年女性，坐在公园长椅上，阳光透过树叶洒在身上，\n温暖治愈的氛围，脸上带着淡淡的微笑，眼神中有怀念也有希望，\n水彩风格，柔和色调，温馨感人，适合公众号封面"
+      },
+      "status": "completed",
+      "createdAt": 1774173270832,
+      "updatedAt": 1774173288898,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322175443h0_5fa838f9632e60a1d4973ab8cb609525?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173283;1805709283&q-key-time=1774173283;1805709283&q-header-list=host&q-url-param-list=&q-signature=9ddc417657e61838c5cc0559c4e56c92cb47fc71",
+        "success": true
+      }
+    },
+    "885b9735-b08e-456a-a7bb-ee9a192e1708": {
+      "id": "885b9735-b08e-456a-a7bb-ee9a192e1708",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的中老年女性，坐在公园长椅上，阳光透过树叶洒在身上，\n温暖治愈的氛围，脸上带着淡淡的微笑，眼神中有怀念也有希望，\n水彩风格，柔和色调，温馨感人，适合公众号封面"
+      },
+      "status": "completed",
+      "createdAt": 1774173295773,
+      "updatedAt": 1774173331895,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322175526h0_3a7593a6d0ce84324e040af8b6d3def9?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173326;1805709326&q-key-time=1774173326;1805709326&q-header-list=host&q-url-param-list=&q-signature=d1266b31bc920e73a5005762c0a028d51a74dc64",
+        "success": true
+      }
+    },
+    "5553b106-64ac-4ae1-a44a-a8999c20bd8c": {
+      "id": "5553b106-64ac-4ae1-a44a-a8999c20bd8c",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的中老年女性，坐在公园长椅上，阳光透过树叶洒在身上，\n温暖治愈的氛围，脸上带着淡淡的微笑，眼神中有怀念也有希望，\n水彩风格，柔和色调，温馨感人，适合公众号封面"
+      },
+      "status": "completed",
+      "createdAt": 1774173345374,
+      "updatedAt": 1774173363321,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322175557h0_54e685f5fd0debc0632a04a6569280ff?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173357;1805709357&q-key-time=1774173357;1805709357&q-header-list=host&q-url-param-list=&q-signature=62c5e4c8c502c38c8eb4a6af5afaee5341cc65c7",
+        "success": true
+      }
+    },
+    "7058e07c-8d14-4d14-8b85-0a13067f3f2a": {
+      "id": "7058e07c-8d14-4d14-8b85-0a13067f3f2a",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的中老年女性，坐在公园长椅上，阳光透过树叶洒在身上，\n温暖治愈的氛围，脸上带着淡淡的微笑，眼神中有怀念也有希望，\n水彩风格，柔和色调，温馨感人，适合公众号封面"
+      },
+      "status": "completed",
+      "createdAt": 1774173370713,
+      "updatedAt": 1774173406153,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322175640h0_ed5a00632d5520156f75fdfe8d421ac1?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173400;1805709400&q-key-time=1774173400;1805709400&q-header-list=host&q-url-param-list=&q-signature=8b14cba2666220d29a37df993975bd1a50b7f56d",
+        "success": true
+      }
+    },
+    "33845b28-90ae-4b8b-8415-051c87a2dc3c": {
+      "id": "33845b28-90ae-4b8b-8415-051c87a2dc3c",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的老奶奶独自坐在家中沙发上，望着窗外的夕阳，\n神情有些忧伤和怀念，温暖的室内光线，水彩风格，\n柔和色调，温馨治愈，适合公众号插图"
+      },
+      "status": "completed",
+      "createdAt": 1774173693351,
+      "updatedAt": 1774173711928,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322180145h0_d11e68695a4226029d4f8f266b79d11e?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173706;1805709706&q-key-time=1774173706;1805709706&q-header-list=host&q-url-param-list=&q-signature=b4238714cb84cc9ca8b100cf090633ba753db69b",
+        "success": true
+      }
+    },
+    "553b03da-fd39-4080-bdfd-eee86871182f": {
+      "id": "553b03da-fd39-4080-bdfd-eee86871182f",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位 60 多岁的老人在家里弹钢琴，阳光从窗户洒进来，\n脸上带着专注和满足的微笑，水彩风格，柔和温暖色调，\n温馨治愈，适合公众号插图"
+      },
+      "status": "completed",
+      "createdAt": 1774173714205,
+      "updatedAt": 1774173733387,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322180207h0_5f01b0a58998bdfaf10e6fc75aa174a0?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173727;1805709727&q-key-time=1774173727;1805709727&q-header-list=host&q-url-param-list=&q-signature=53d929ccb17a53149ddda5c1ca54682c924395ce",
+        "success": true
+      }
+    },
+    "9db335ee-2b9d-4524-8c47-d48a4f80a906": {
+      "id": "9db335ee-2b9d-4524-8c47-d48a4f80a906",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一群 60 多岁的老人在社区活动中心唱歌跳舞，大家脸上都带着笑容，\n热闹温馨的氛围，水彩风格，明亮温暖色调，\n温馨治愈，适合公众号插图"
+      },
+      "status": "completed",
+      "createdAt": 1774173735309,
+      "updatedAt": 1774173752789,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322180226h0_62dca15f6706cda5fbe4ccf66d622da5?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774173746;1805709746&q-key-time=1774173746;1805709746&q-header-list=host&q-url-param-list=&q-signature=e84844bd02f6ff06f78234b8c4bb6ce4242d109c",
+        "success": true
+      }
+    },
+    "b500397f-59d3-48d5-ad94-9ca409608024": {
+      "id": "b500397f-59d3-48d5-ad94-9ca409608024",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中年男人疲惫但坚强的背影，水彩风格，温暖治愈，16:9 比例，无水印"
+      },
+      "status": "completed",
+      "createdAt": 1774174640791,
+      "updatedAt": 1774174659426,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322181733h0_f3023fd2bbe270db48dd5c9f03dccaee?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774174653;1805710653&q-key-time=1774174653;1805710653&q-header-list=host&q-url-param-list=&q-signature=cd39f8178fa61b29e7e8c881da477344c42501a6",
+        "success": true
+      }
+    },
+    "9fbdd057-b093-40a6-926c-198ea085ebce": {
+      "id": "9fbdd057-b093-40a6-926c-198ea085ebce",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中年人为账单发愁的无奈场景，水彩风格，温暖治愈，16:9 比例，无水印"
+      },
+      "status": "completed",
+      "createdAt": 1774174846410,
+      "updatedAt": 1774174863574,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322182058h0_d6140ee0d49186c67902dfd68fb38d78?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774174858;1805710858&q-key-time=1774174858;1805710858&q-header-list=host&q-url-param-list=&q-signature=e0b26648a8a49ea8df3818d8698ff30d1a43e937",
+        "success": true
+      }
+    },
+    "d886387c-5c1a-47d8-a61b-be8eaddcf6ef": {
+      "id": "d886387c-5c1a-47d8-a61b-be8eaddcf6ef",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中年人照顾生病父母的温馨场景，水彩风格，温暖治愈，16:9 比例，无水印"
+      },
+      "status": "completed",
+      "createdAt": 1774174846417,
+      "updatedAt": 1774174882547,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322182117h0_cc56aa3565792c678fc6573337f8dca2?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774174877;1805710877&q-key-time=1774174877;1805710877&q-header-list=host&q-url-param-list=&q-signature=d4a2fa4f037aec0f8b721994eead3088f2062d7f",
+        "success": true
+      }
+    },
+    "52f5563e-6c09-414b-b0fb-fceaf64af02f": {
+      "id": "52f5563e-6c09-414b-b0fb-fceaf64af02f",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "孩子认真学习父母陪伴的场景，水彩风格，温暖治愈，16:9 比例，无水印"
+      },
+      "status": "completed",
+      "createdAt": 1774174846424,
+      "updatedAt": 1774174901479,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322182135h0_1f69774df24a0c9b40fd6f8a1ed71d5d?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774174895;1805710895&q-key-time=1774174895;1805710895&q-header-list=host&q-url-param-list=&q-signature=8e62b70a6760361810d350671b7df779d8c6e309",
+        "success": true
+      }
+    },
+    "fe0c75da-0a7d-442c-9655-77a37578200a": {
+      "id": "fe0c75da-0a7d-442c-9655-77a37578200a",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "夫妻温馨相处家庭和睦的场景，水彩风格，温暖治愈，16:9 比例，无水印"
+      },
+      "status": "completed",
+      "createdAt": 1774174846430,
+      "updatedAt": 1774174920426,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322182154h0_4e75dd7353c28f2a56f31164a5a80081?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774174914;1805710914&q-key-time=1774174914;1805710914&q-header-list=host&q-url-param-list=&q-signature=b596801f2f7c760ae9a9355e450475d47ba385ab",
+        "success": true
+      }
+    },
+    "4c7a36ee-6dcc-4fb5-802a-6d4dea052430": {
+      "id": "4c7a36ee-6dcc-4fb5-802a-6d4dea052430",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "中年人晨跑锻炼注重健康的场景，水彩风格，温暖治愈，16:9 比例，无水印"
+      },
+      "status": "completed",
+      "createdAt": 1774174846435,
+      "updatedAt": 1774174939852,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322182213h0_43e70f2165430ab1d7bf6adbfc628471?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774174933;1805710933&q-key-time=1774174933;1805710933&q-header-list=host&q-url-param-list=&q-signature=3f0ab8576cbf09dbdcab0956779a4dc408f84f4c",
+        "success": true
+      }
+    },
+    "cd36704b-0c4d-48d1-b054-117add2c3623": {
+      "id": "cd36704b-0c4d-48d1-b054-117add2c3623",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "增肌减肥概念图，肌肉线条与脂肪对比，健身主题，绿色蓝色对比，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774176419824,
+      "updatedAt": 1774176455487,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322184729h0_cc6c51e90f6ddacb6965068252a78f00?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774176449;1805712449&q-key-time=1774176449;1805712449&q-header-list=host&q-url-param-list=&q-signature=b69a32d8b293de5a2882cbafe6e1d3c6eb14e4b2",
+        "success": true
+      }
+    },
+    "9c1348d3-7fdd-40f7-a850-d7e191959f2f": {
+      "id": "9c1348d3-7fdd-40f7-a850-d7e191959f2f",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "女性在家做深蹲动作示范，标准姿势，客厅环境，温馨明亮，健身教学，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774176419831,
+      "updatedAt": 1774176486102,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322184800h0_9003717530272285de57c81af13ffaf2?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774176480;1805712480&q-key-time=1774176480;1805712480&q-header-list=host&q-url-param-list=&q-signature=f1e661a06965e1eeb4aabd26f23ca4673dd86911",
+        "success": true
+      }
+    },
+    "8805f2b7-2ec1-4f83-b8ef-9a15478f20e0": {
+      "id": "8805f2b7-2ec1-4f83-b8ef-9a15478f20e0",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "女性做俯卧撑动作示范，标准姿势，瑜伽垫上，居家健身，温馨明亮，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774176419837,
+      "updatedAt": 1774176518455,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322184819h0_34c37697c7cc7cc9a214380391db4adc?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774176499;1805712499&q-key-time=1774176499;1805712499&q-header-list=host&q-url-param-list=&q-signature=006d1abc167d985ee683d88f09f8f8571e2b6344",
+        "success": true
+      }
+    },
+    "a104c289-34c8-4195-9b0c-2989f1398b78": {
+      "id": "a104c289-34c8-4195-9b0c-2989f1398b78",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "女性做平板支撑动作示范，标准姿势，客厅环境，居家健身，温馨明亮，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774176419842,
+      "updatedAt": 1774176537931,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322184852h0_b2ef1078c9f09597d132c5571acdba03?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774176532;1805712532&q-key-time=1774176532;1805712532&q-header-list=host&q-url-param-list=&q-signature=c3d1df9e13a2c6afe734d7c362f17b162ae190bc",
+        "success": true
+      }
+    },
+    "fe2ec47d-3011-4daf-9783-23fe499081ca": {
+      "id": "fe2ec47d-3011-4daf-9783-23fe499081ca",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "健康减脂餐，鸡胸肉糙米饭蔬菜，营养均衡，清新风格，美食摄影，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774176419847,
+      "updatedAt": 1774176557324,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322184911h0_ef3c2d0676f710de7a96aa5ef81d21c0?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774176551;1805712551&q-key-time=1774176551;1805712551&q-header-list=host&q-url-param-list=&q-signature=73d67513f8cad3ddb3b1fa1ca6cfe3a9afdcb22e",
+        "success": true
+      }
+    },
+    "c3c781e4-942f-408c-8861-841c2252d2d8": {
+      "id": "c3c781e4-942f-408c-8861-841c2252d2d8",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "冬季蔬菜丰收场景，白菜萝卜菠菜西兰花胡萝卜莲藕，菜市场摊位，温暖色调，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774177738261,
+      "updatedAt": 1774177755951,
+      "result": {
+        "data": "",
+        "success": true
+      }
+    },
+    "e420e0c7-f69a-4add-9f3c-d57b9b253d8d": {
+      "id": "e420e0c7-f69a-4add-9f3c-d57b9b253d8d",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "新鲜大白菜特写，菜摊上摆放，冬季蔬菜，清新自然，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738268,
+      "updatedAt": 1774177775399,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322190929h0_8bd4f6e0fd15776575a3943b2552d9f4?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177769;1805713769&q-key-time=1774177769;1805713769&q-header-list=host&q-url-param-list=&q-signature=dc817060dea143e440043af07b54499afa034a65",
+        "success": true
+      }
+    },
+    "3194c48b-1e80-47da-9057-2a815fdacf15": {
+      "id": "3194c48b-1e80-47da-9057-2a815fdacf15",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "红萝卜白萝卜，菜摊上摆放，冬季蔬菜，清新自然，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738274,
+      "updatedAt": 1774177794863,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322190948h0_6fb46af07efa5267ba3da9c2869c3913?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177789;1805713789&q-key-time=1774177789;1805713789&q-header-list=host&q-url-param-list=&q-signature=e5da591dc344d137a654e5ee98d1af84135d3723",
+        "success": true
+      }
+    },
+    "6d322c02-415f-4048-8ae9-c9050e167240": {
+      "id": "6d322c02-415f-4048-8ae9-c9050e167240",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "新鲜菠菜，绿叶蔬菜，菜摊上摆放，冬季蔬菜，清新自然，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738280,
+      "updatedAt": 1774177814299,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322191007h0_1f0d87d37da2506a1fd59e9f5a29df13?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177808;1805713808&q-key-time=1774177808;1805713808&q-header-list=host&q-url-param-list=&q-signature=42fc0acfc0fcea35f69d70701bd149b1abfb445a",
+        "success": true
+      }
+    },
+    "b1422492-6f66-4ff7-a33a-4c929903a1f4": {
+      "id": "b1422492-6f66-4ff7-a33a-4c929903a1f4",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "西兰花特写，绿色蔬菜皇冠，菜摊上摆放，冬季蔬菜，清新自然，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738285,
+      "updatedAt": 1774177833267,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322191027h0_d31e1f5564916c11dcbaa393e0952c70?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177827;1805713827&q-key-time=1774177827;1805713827&q-header-list=host&q-url-param-list=&q-signature=53131ad8fce6598270653e2339d48477e5bbcb1d",
+        "success": true
+      }
+    },
+    "0147c81a-8bac-458c-8eec-289682a376e5": {
+      "id": "0147c81a-8bac-458c-8eec-289682a376e5",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "胡萝卜特写，橙色蔬菜，菜摊上摆放，冬季蔬菜，清新自然，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738291,
+      "updatedAt": 1774177852147,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322191046h0_c58f030f1f680511bbfff1b5c79816a5?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177846;1805713846&q-key-time=1774177846;1805713846&q-header-list=host&q-url-param-list=&q-signature=42c7b293f7840c056770e8a08843ae6423e657ee",
+        "success": true
+      }
+    },
+    "3975dc3c-1be4-440f-bd44-9a5baa3a7c1a": {
+      "id": "3975dc3c-1be4-440f-bd44-9a5baa3a7c1a",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "新鲜莲藕，菜摊上摆放，冬季蔬菜，清新自然，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738299,
+      "updatedAt": 1774177870981,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322191105h0_d1b8a71ff8a904bd1854ca79fdf6a6ff?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177865;1805713865&q-key-time=1774177865;1805713865&q-header-list=host&q-url-param-list=&q-signature=d31818ad8e77cd104033c4009e31f92cb797af7e",
+        "success": true
+      }
+    },
+    "f6d825a0-4180-4f18-bbb4-b1421d2b8c1b": {
+      "id": "f6d825a0-4180-4f18-bbb4-b1421d2b8c1b",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "彩虹饮食法，五种颜色蔬菜拼盘，红绿白黄紫，营养均衡，美食摄影，4:3"
+      },
+      "status": "completed",
+      "createdAt": 1774177738308,
+      "updatedAt": 1774177890397,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322191124h0_366ba89e0a0ffcb2317bf2023026972e?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177884;1805713884&q-key-time=1774177884;1805713884&q-header-list=host&q-url-param-list=&q-signature=c3cceb4cc31ae563a7f25bcd34435a4622b4dbfb",
+        "success": true
+      }
+    },
+    "1dd7e266-17d0-4553-ab0c-a6cb0814758d": {
+      "id": "1dd7e266-17d0-4553-ab0c-a6cb0814758d",
+      "skillName": "文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "冬季蔬菜丰收场景，白菜萝卜菠菜西兰花胡萝卜莲藕，菜市场摊位，温暖色调，16:9 横幅"
+      },
+      "status": "completed",
+      "createdAt": 1774177891024,
+      "updatedAt": 1774177909787,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322191143h0_076e2bf4e1f25e1bc4dccf404345b821?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774177903;1805713903&q-key-time=1774177903;1805713903&q-header-list=host&q-url-param-list=&q-signature=3d35b1e7413143c1b38649aa952e703331a85f06",
+        "success": true
+      }
+    },
+    "29fce7a4-e899-414d-978f-fa702ae26b74": {
+      "id": "29fce7a4-e899-414d-978f-fa702ae26b74",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一位女性在清晨的公园跑步，阳光透过树叶，健康活力，摄影风格，温暖治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774181874470,
+      "updatedAt": 1774181891461,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322201805h0_725ba78408dfa95ce6b8673c3cc9904c?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774181885;1805717885&q-key-time=1774181885;1805717885&q-header-list=host&q-url-param-list=&q-signature=387415095db44a6daf0808c15a32e756fe152dda",
+        "success": true
+      }
+    },
+    "650b466a-4245-47c6-ad43-828df54aa2cb": {
+      "id": "650b466a-4245-47c6-ad43-828df54aa2cb",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774182499579,
+      "updatedAt": 1774182517585,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322202831h0_de666b4c9c467177af6194b8ea7dbbc8?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774182512;1805718512&q-key-time=1774182512;1805718512&q-header-list=host&q-url-param-list=&q-signature=4fe8d3e6de81711901a5c96218efeda415a2c07b",
+        "success": true
+      }
+    },
+    "80932082-58cb-4bfb-b0d0-6ca2c9c43582": {
+      "id": "80932082-58cb-4bfb-b0d0-6ca2c9c43582",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格"
+      },
+      "status": "completed",
+      "createdAt": 1774182521385,
+      "updatedAt": 1774182538789,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322202852h0_775d805e3531b8c78539988f05bad915?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774182533;1805718533&q-key-time=1774182533;1805718533&q-header-list=host&q-url-param-list=&q-signature=7b6bbbda4b4c011b310fd821289b1cbe4ba78674",
+        "success": true
+      }
+    },
+    "58959b54-6e46-42c7-a680-d3fbb82a8432": {
+      "id": "58959b54-6e46-42c7-a680-d3fbb82a8432",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只小狗"
+      },
+      "status": "completed",
+      "createdAt": 1774182547440,
+      "updatedAt": 1774182560956,
+      "result": {
+        "data": "一只小狗，毛茸茸的，正摇着尾巴朝你跑来。",
+        "success": true
+      }
+    },
+    "f6b48fc1-56ee-46c6-8591-f332a6c5330a": {
+      "id": "f6b48fc1-56ee-46c6-8591-f332a6c5330a",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只小狗，卡通风格"
+      },
+      "status": "completed",
+      "createdAt": 1774182577403,
+      "updatedAt": 1774182595146,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322202949h0_ffd370f3b9b686c4e42df4e2d4d56747?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774182589;1805718589&q-key-time=1774182589;1805718589&q-header-list=host&q-url-param-list=&q-signature=c34cc2ef21699f5eec429c0aa27739426cd8ce57",
+        "success": true
+      }
+    },
+    "ce7497b9-0e79-48b0-a5f2-8e75bad1464f": {
+      "id": "ce7497b9-0e79-48b0-a5f2-8e75bad1464f",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一只可爱的小猫，卡通风格，温馨治愈"
+      },
+      "status": "completed",
+      "createdAt": 1774182619837,
+      "updatedAt": 1774182637876,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322203032h0_c19b0f7d7ff3be07213400d80fd642f8?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774182632;1805718632&q-key-time=1774182632;1805718632&q-header-list=host&q-url-param-list=&q-signature=590a6db9c032ab26195916c8607623755106c1c6",
+        "success": true
+      }
+    },
+    "240c758b-6e4b-4f09-93cc-2ec1b42c5620": {
+      "id": "240c758b-6e4b-4f09-93cc-2ec1b42c5620",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "一朵盛开的玫瑰花，水彩风格，红色花瓣"
+      },
+      "status": "completed",
+      "createdAt": 1774182638109,
+      "updatedAt": 1774182657053,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322203050h0_3ec48eb2c5aac140623c5a1504b26ea3?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774182650;1805718650&q-key-time=1774182650;1805718650&q-header-list=host&q-url-param-list=&q-signature=834c1c5e692b05e3947ee7d22fe2f79ad747099c",
+        "success": true
+      }
+    },
+    "68da8bb4-85d6-4cdd-9959-9fd69faa7dcd": {
+      "id": "68da8bb4-85d6-4cdd-9959-9fd69faa7dcd",
+      "skillName": "元宝文生图",
+      "appName": "元宝应用",
+      "params": {
+        "prompt": "重庆马拉松比赛现场，众多跑者在长江大桥上奔跑，山城背景，高楼林立，云雾缭绕，壮观场面，摄影风格，运动激情"
+      },
+      "status": "completed",
+      "createdAt": 1774182896609,
+      "updatedAt": 1774182915829,
+      "result": {
+        "data": "[图片]https://hunyuan-prod-1258344703.cos.ap-guangzhou.myqcloud.com/text2img/6e0203a3395039d50cebe20e4a539aa3/20260322203510h0_503e9b6f93315c07d967dadb13c1e393?q-sign-algorithm=sha1&q-ak=AKIDRl074nOsGdJ9zjMsCRWP3ShmgS3VtX4S&q-sign-time=1774182910;1805718910&q-key-time=1774182910;1805718910&q-header-list=host&q-url-param-list=&q-signature=bfb31cdfa71524f2f267c0c20fa94e43bef59fdc",
+        "success": true
+      }
+    }
+  }
+}

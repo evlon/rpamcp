@@ -68,6 +68,28 @@ pnpm install
 
 ## 运行
 
+### PM2 管理（推荐）
+
+```bash
+# 构建项目
+pnpm run build
+
+# 启动服务（SSE 模式，支持远程访问）
+pm2 start ecosystem.config.cjs
+
+# 查看状态
+pm2 status
+
+# 查看日志
+pm2 logs rpamcp
+
+# 重启服务
+pm2 restart rpamcp
+
+# 停止服务
+pm2 stop rpamcp
+```
+
 ### MCP 模式（OpenClaw 集成）
 
 ```bash
@@ -76,11 +98,11 @@ pnpm run build        # 构建
 pnpm start            # 生产模式
 ```
 
-### 独立 HTTP 服务（仅测试）
+### 远程访问模式
 
 ```bash
-pnpm run dev:standalone   # 开发模式
-pnpm start:standalone     # 生产模式
+pnpm run start:remote   # SSE 模式，端口 3002
+pnpm run dev:remote     # 开发模式
 ```
 
 ## 使用示例
@@ -263,18 +285,47 @@ pnpm run demo
 
 ## 集成到 OpenClaw
 
+### 本地连接
+
 在 OpenClaw 的 MCP 配置中添加：
 
 ```json
 {
   "mcpServers": {
     "rpamcp": {
+      "type": "local",
       "command": "pnpm",
-      "args": ["exec", "tsx", "src/index.ts"],
-      "cwd": "/path/to/rpamcp",
-      "env": {
-        "HTTP_PORT": "3001"
-      }
+      "args": ["start"],
+      "cwd": "/path/to/rpamcp"
+    }
+  }
+}
+```
+
+### 远程连接（推荐）
+
+使用 PM2 启动后，通过 SSE 远程连接：
+
+```json
+{
+  "mcpServers": {
+    "rpamcp": {
+      "type": "remote",
+      "url": "http://<服务器IP>:3002/sse"
+    }
+  }
+}
+```
+
+示例配置（`opencode.json`）:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "rpamcp": {
+      "type": "remote",
+      "url": "http://192.168.3.8:3002/sse"
     }
   }
 }

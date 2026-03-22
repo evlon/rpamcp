@@ -1,4 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { join, dirname } from 'path';
 
 export type TaskStatus = 'pending' | 'running' | 'completed' | 'failed';
 
@@ -29,9 +31,64 @@ export interface Task {
   updatedAt: number;
 }
 
+interface PersistedData {
+  skills: Record<string, Skill>;
+  tasks: Record<string, Task>;
+}
+
+function getDataDir(): string {
+  const dataDir = process.env.DATA_DIR || join(process.cwd(), 'data');
+  if (!existsSync(dataDir)) {
+    mkdirSync(dataDir, { recursive: true });
+  }
+  return dataDir;
+}
+
+function getDataFilePath(): string {
+  return join(getDataDir(), 'rpamcp-data.json');
+}
+
+function loadFromDisk(): PersistedData {
+  const filePath = getDataFilePath();
+  if (!existsSync(filePath)) {
+    return { skills: {}, tasks: {} };
+  }
+  try {
+    const content = readFileSync(filePath, 'utf-8');
+    return JSON.parse(content);
+  } catch (error) {
+    console.error('Failed to load data from disk:', error);
+    return { skills: {}, tasks: {} };
+  }
+}
+
+function saveToDisk(data: PersistedData): void {
+  const filePath = getDataFilePath();
+  try {
+    writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
+  } catch (error) {
+    console.error('Failed to save data to disk:', error);
+  }
+}
+
 class TaskQueue {
   private tasks: Map<string, Task> = new Map();
   private skills: Map<string, Skill> = new Map();
+
+  constructor() {
+    const data = loadFromDisk();
+    Object.values(data.skills).forEach(skill => {
+      this.skills.set(`${skill.appName}:${skill.name}`, skill);
+    });
+    Object.values(data.tasks).forEach(task => {
+      if (task.status === 'pending' || task.status === 'running') {
+        task.status = 'pending';
+        task.updatedAt = Date.now();
+      }
+      this.tasks.set(task.id, task);
+    });
+    console.log(`Loaded ${this.skills.size} skills and ${this.tasks.size} tasks from disk`);
+  }
 
   registerSkill(
     appName: string, 
@@ -48,11 +105,16 @@ class TaskQueue {
       createdAt: now,
     };
     this.skills.set(`${appName}:${skillName}`, skill);
+    this.persist();
     return skill;
   }
 
   unregisterSkill(appName: string, skillName: string): boolean {
-    return this.skills.delete(`${appName}:${skillName}`);
+    const removed = this.skills.delete(`${appName}:${skillName}`);
+    if (removed) {
+      this.persist();
+    }
+    return removed;
   }
 
   getSkill(appName: string, skillName: string): Skill | null {
@@ -78,6 +140,7 @@ class TaskQueue {
       updatedAt: now,
     };
     this.tasks.set(task.id, task);
+    this.persist();
     return task;
   }
 
@@ -103,6 +166,7 @@ class TaskQueue {
     task.result = result;
     task.updatedAt = Date.now();
     this.tasks.set(taskId, task);
+    this.persist();
     return task;
   }
 
@@ -114,6 +178,7 @@ class TaskQueue {
     task.error = error;
     task.updatedAt = Date.now();
     this.tasks.set(taskId, task);
+    this.persist();
     return task;
   }
 
@@ -146,6 +211,21 @@ class TaskQueue {
     return filtered
       .sort((a, b) => b.createdAt - a.createdAt)
       .slice(0, limit);
+  }
+
+  private persist(): void {
+    const skills: Record<string, Skill> = {};
+    const tasks: Record<string, Task> = {};
+    
+    for (const [key, skill] of this.skills.entries()) {
+      skills[key] = skill;
+    }
+    
+    for (const [id, task] of this.tasks.entries()) {
+      tasks[id] = task;
+    }
+    
+    saveToDisk({ skills, tasks });
   }
 }
 
