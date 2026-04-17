@@ -1,0 +1,272 @@
+# 微信公众号留言采集器 - XPath/CSS选择器参考
+
+## 📋 页面导航
+
+### 公众号首页点击留言，进入留言管理
+```javascript
+$('ul.weui-desktop-sub-menu > li.weui-desktop-sub-menu__item span:contains("留言")').click();
+```
+
+---
+
+## 📝 文章列表
+
+### 获取所有文章
+```javascript
+$('div.comment-articles div.comment-article-list div.article-list__item')
+```
+
+### 第一个文章（无红点，因为点击后红点消失）
+```javascript
+$('div.comment-articles div.comment-article-list div.article-list__item').eq(0).text()
+// 输出: ' \n    中国 6 亿人近视！这 5 种"天然护眼药"食物，每天吃一点，眼睛亮了，视力稳了\n   13:00  2条'
+
+$('div.comment-articles div.comment-article-list div.article-list__item').eq(0).html()
+// 输出: '<div></div> <div class="article-list__item-title">\x3C!---->\n    中国 6 亿人近视！这 5 种"天然护眼药"食物，每天吃一点，眼睛亮了，视力稳了\n  </div> <div class="article-list__item-opr"><span class="article-list__item-time">13:00</span> \x3C!----> <span class="article-list__item-total-count">2条</span></div>'
+```
+
+### 有红点的文章（span.article-list__item-badge 存在）
+```javascript
+// 第二个有红点的文章
+$('div.article-list__item span.article-list__item-badge').eq(1).parents('div.article-list__item').html()
+// 输出: '<div></div> <div class="article-list__item-title">\x3C!---->\n    晨跑前要不要吃早餐？医生：这 2 种情况一定要吃，推荐 5 种食物\n  </div> <div class="article-list__item-opr"><span class="article-list__item-time">04-15 16:07</span> <span class="article-list__item-badge"><span>1</span></span> <span class="article-list__item-total-count">11条</span></div>'
+
+// 第一个有红点的文章
+$('div.article-list__item span.article-list__item-badge').eq(0).parents('div.article-list__item').html()
+// 输出: '<div></div> <div class="article-list__item-title">\x3C!---->\n    2026 年，存钱最难的不是赚，是这 3 道坎：1 万靠自律，30 万靠心性，50 万靠格局\n  </div> <div class="article-list__item-opr"><span class="article-list__item-time">00:15</span> <span class="article-list__item-badge"><span>1</span></span> <span class="article-list__item-total-count">4条</span></div>'
+```
+
+---
+
+## 🔔 新留言检测（双重机制）
+
+### 方式1：检查"有更新(N条)"提示 ⭐ 推荐
+**适用场景**: 刷新页面后，第一个文章可能没有红点，但有此全局提示
+
+```javascript
+// 精确选择器（xpath.txt 提供）
+$('div.filter-bar li.comment-dropdown-item div.weui-desktop-tooltip__wrp span.weui-desktop-form__dropdown__value').html()
+// 输出: '有更新(2条)'
+
+// 提取数字
+const updateText = $('div.filter-bar li.comment-dropdown-item div.weui-desktop-tooltip__wrp span.weui-desktop-form__dropdown__value').html();
+const match = updateText.match(/有更新\((\d+)条\)/);
+if (match) {
+    const count = parseInt(match[1]); // 2
+}
+```
+
+### 方式2：检查红点标记
+**适用场景**: 首次进入页面或未刷新的情况
+
+```javascript
+// 检查是否存在红点
+$('div.article-list__item span.article-list__item-badge').length > 0
+
+// 提取红点中的数字
+$('div.article-list__item span.article-list__item-badge span').text()
+// 输出: '1'
+```
+
+---
+
+## 💬 留言详情
+
+### 点击文章后，检查是否有新更新
+```javascript
+$('div.filter-bar li.comment-dropdown-item div.weui-desktop-tooltip__wrp span.weui-desktop-form__dropdown__value').html()
+// 输出: '有更新(2条)'
+```
+
+### 获取留言人昵称
+```javascript
+// 留言者数量
+$('div.comment-list__item-container span.comment-nickname span').length
+// 输出: 2
+
+// 第一个留言者
+$('div.comment-list__item-container span.comment-nickname span').eq(0).html()
+// 输出: '哄哄2437'
+```
+
+### 区分公众号和普通用户
+
+#### 公众号账号（isPublicAccount = true）
+```html
+<span class="comment-nickname">
+  <span>阿牛云舍</span> 
+  <!----> 
+  <i class="icon icon-public-account"></i> 
+  <!----> 
+  <!----> 
+  <!---->
+</span>
+```
+
+```javascript
+// 检测是否为公众号
+const isPublicAccount = $nicknameSpan.find('i.icon-public-account').length > 0;
+```
+
+#### 普通用户（isPublicAccount = false）
+```html
+<span class="comment-nickname">
+  <span>蓝天白云</span> 
+  <!----> 
+  <!----> 
+  <!----> 
+  <!----> 
+  <!---->
+</span>
+```
+
+```javascript
+// 检测是否为普通用户
+const isPublicAccount = $nicknameSpan.find('i.icon-public-account').length > 0; // false
+```
+
+---
+
+## 🔔 新留言通知
+
+### 检测新留言提示
+```javascript
+$('div.new-comment-toast').text()
+// 输出: '1条新留言'
+
+// 提取数字
+const toast = $('div.new-comment-toast').text();
+const match = toast.match(/(\d+)条新留言/);
+if (match) {
+    const count = parseInt(match[1]); // 1
+}
+```
+
+---
+
+## 🎯 完整采集流程
+
+### 1. 进入留言管理页
+```javascript
+$('ul.weui-desktop-sub-menu > li.weui-desktop-sub-menu__item span:contains("留言")').click();
+```
+
+### 2. 检测新留言（双重机制）
+```javascript
+// 方式1: 检查全局更新提示
+const $updateText = $('div.filter-bar li.comment-dropdown-item div.weui-desktop-tooltip__wrp span.weui-desktop-form__dropdown__value');
+const hasGlobalUpdate = $updateText.html() && $updateText.html().includes('有更新');
+
+// 方式2: 检查红点标记
+const $articlesWithBadge = $('div.article-list__item span.article-list__item-badge');
+const hasBadge = $articlesWithBadge.length > 0;
+
+// 任一条件满足即有新留言
+const hasNewComments = hasGlobalUpdate || hasBadge;
+```
+
+### 3. 遍历文章并采集
+```javascript
+$('div.comment-articles div.comment-article-list div.article-list__item').each(function(index) {
+    const $article = $(this);
+    const title = $article.find('div.article-list__item-title').text().trim();
+    const hasBadge = $article.find('span.article-list__item-badge').length > 0;
+    
+    // 处理逻辑...
+});
+```
+
+### 4. 点击进入文章详情
+```javascript
+$article.find('div.article-list__item-title').click();
+```
+
+### 5. 采集公众号留言者
+```javascript
+$('div.comment-list__item-container span.comment-nickname').each(function() {
+    const $nicknameSpan = $(this);
+    const nickname = $nicknameSpan.find('span').first().html();
+    const isPublicAccount = $nicknameSpan.find('i.icon-public-account').length > 0;
+    
+    if (nickname && isPublicAccount) {
+        console.log('发现公众号:', nickname);
+    }
+});
+```
+
+### 6. 返回列表页
+```javascript
+$('.back-btn, .weui-desktop-btn_back').first().click();
+```
+
+---
+
+## 📊 关键选择器总结
+
+| 功能 | CSS选择器 | 说明 |
+|------|----------|------|
+| 留言菜单 | `ul.weui-desktop-sub-menu > li.weui-desktop-sub-menu__item span:contains("留言")` | 首页导航 |
+| 文章列表 | `div.comment-articles div.comment-article-list div.article-list__item` | 所有文章 |
+| 文章标题 | `div.article-list__item-title` | 文章标题文本 |
+| 红点标记 | `span.article-list__item-badge` | 新留言标识1 |
+| 红点数量 | `span.article-list__item-badge span` | 红点中的数字 |
+| **全局更新** | `div.filter-bar li.comment-dropdown-item div.weui-desktop-tooltip__wrp span.weui-desktop-form__dropdown__value` | **新留言标识2** ⭐ |
+| 留言总数 | `span.article-list__item-total-count` | 总留言数 |
+| 留言容器 | `div.comment-list__item-container` | 详情页留言列表 |
+| 留言者昵称 | `span.comment-nickname span` | 留言者名称 |
+| 公众号标识 | `i.icon-public-account` | 判断是否为公众号 |
+| 新留言提示 | `div.new-comment-toast` | 监听新留言 |
+| 返回按钮 | `.back-btn, .weui-desktop-btn_back` | 返回列表页 |
+
+---
+
+## 💡 注意事项
+
+1. **双重检测机制**: 
+   - 优先检查"有更新(N条)"全局提示
+   - 其次检查每篇文章的红点标记
+   - 两者任一存在即表示有新留言
+
+2. **刷新后的行为**:
+   - 刷新页面后，第一个文章的红点会消失
+   - 但"有更新(N条)"的全局提示仍然存在
+   - 因此需要同时检测两种方式
+
+3. **公众号识别**:
+   - 通过 `i.icon-public-account` 元素判断
+   - 存在即为公众号，不存在为普通用户
+
+4. **XPath vs CSS选择器**:
+   - 本文档使用 jQuery CSS 选择器（更易用）
+   - 如需 XPath，可使用 `$x()` 函数或 document.evaluate
+
+---
+
+## 🔧 调试技巧
+
+### 在控制台测试选择器
+```javascript
+// 测试"有更新"检测
+console.log($('div.filter-bar li.comment-dropdown-item div.weui-desktop-tooltip__wrp span.weui-desktop-form__dropdown__value').html());
+
+// 测试红点检测
+console.log($('div.article-list__item span.article-list__item-badge').length);
+
+// 测试公众号检测
+console.log($('div.comment-list__item-container i.icon-public-account').length);
+```
+
+### 模拟点击测试
+```javascript
+// 点击第一个文章
+$('div.comment-articles div.comment-article-list div.article-list__item').eq(0).find('div.article-list__item-title').click();
+
+// 等待3秒后检查
+setTimeout(() => {
+    console.log('留言者数量:', $('div.comment-list__item-container span.comment-nickname').length);
+}, 3000);
+```
+
+---
+
+*最后更新: 2026-04-17 v7.3*
