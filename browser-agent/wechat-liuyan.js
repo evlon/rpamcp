@@ -52,6 +52,14 @@
 
     // ========== 工具函数 ==========
 
+    // generateReplyContent(articleInfo.title,commentText)
+    function generateReplyContent(articleTitle, commentText) {
+        // 这里可以自定义回复内容的生成逻辑
+        // 例如，可以使用 articleTitle 和 commentText 来生成回复内容
+        return `回复文章《${articleTitle}》的留言：${commentText}`;
+    }
+
+
     function randomDelay(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
@@ -498,6 +506,33 @@
                             }
                         } catch (e) {
                             console.warn(LOG_PREFIX, '⚠️ 处理留言者时出错:', e);
+                        }
+
+                        // 先回复留言
+                        try{
+                            // 找到回复留言按钮, parents('div.comment-list__item-bd').find('div.comment-list__item-opr a.icon-reply')
+                            const $replyButton = $nicknameSpan.parents('div.comment-list__item-bd').find('div.comment-list__item-opr a.icon-reply');
+                            if ($replyButton.length > 0) {
+                                // 找到留言内容
+                                const commentText = $nicknameSpan.parents('div.comment-list__item-bd').find('div.comment-text').text();
+
+
+
+                                humanClick($replyButton);
+
+                                // 生成回复内容
+                                const replyContent = generateReplyContent(articleInfo.title,commentText);
+
+                                // 等待回复框出现并输入回复内容
+                                $("div.comment-reply-box:visible div.ProseMirror").text(replyContent);
+
+                                humanClick('.weui-desktop-btn.weui-desktop-btn_primary:visible:contains("回复")');
+
+                                console.log(LOG_PREFIX, '回复留言');
+                            }
+                        }
+                        catch (e) {
+                            console.warn(LOG_PREFIX, '⚠️ 回复留言时出错:', e);
                         }
                     });
                 } else {
